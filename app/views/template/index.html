@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>DOSCG ITEMS</h1>
+<ul></ul>
+<h4>- X, Y, 5, 9, 15, 23, Z - Please create a new function for finding X, Y, Z value</h4>
+<ul>
+    <li><a href="{{ url_for('DOSCG.func1') }}">Answer</a></li>
+</ul>
+<h4>- If A = 21, A + B = 23, A + C = -21 - Please create a new function for finding B and C value</h4>
+<ul>
+    <li><a href="{{ url_for('DOSCG.func2') }}">Answer</a></li>
+</ul>
+<h4>- Please use “Google API” for finding the best way to go to Central World from SCG Bangsue </h4>
+<ul>
+    <li><a href="{{ url_for('DOSCG.func3') }}">Answer</a></li>
+</ul>
+<h4>- Please create a small project using Line messaging API for getting a notification when your Line Bot can not
+    answer a question to the customer more than 10 second </h4>
+<ul>
+    <li>Line bot id : <a href="https://line.me/ti/p/~@323zhvuf">@323zhvuf</a></li>
+    <li>Line admin to receive notification : <a href="https://line.me/R/ti/g/DjDX6ZLexc">Join Admin group</a></li>
+    <li>Note: If user send messages that contain "test" in them, it will be forwarded to admin group
+        (Refers to the message not meeting the conditions for the bot's response.).</li>
+</ul>
+<h4>- One simple static page for your CV </h4>
+<ul>
+    <li><a href="{{ url_for('DOSCG.resume') }}">Resume</a></li>
+</ul>
+{% endblock %}
+
+<!-- Create a new controller and Model called “DOSCG”
+X, Y, 5, 9, 15, 23, Z  - Please create a new function for finding X, Y, Z value
+If A = 21, A + B = 23, A + C = -21 - Please create a new function for finding B and C value
+Please use “Google API” for finding the best way to go to Central World from SCG Bangsue 
+Please create a small project using Line messaging API for getting a notification when your Line Bot can not answer a question to the customer more than 10 second -->
